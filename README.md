@@ -6,7 +6,7 @@
 
 Vue 3 · Pinia · PHP · MySQL · MIT
 
-[软件下载](#软件下载) · [功能](#功能) · [快速开始](#快速开始) · [音源接入](#音源接入与模块开关) · [生产部署](#生产部署) · [开发](#开发与测试) · [许可](#许可与致谢)
+[关于项目](#关于项目) · [功能](#功能) · [快速开始](#快速开始) · [音源接入](#音源接入与模块开关) · [生产部署](#生产部署) · [开发](#开发与测试) · [许可](#许可与致谢)
 
 </div>
 
@@ -14,22 +14,20 @@ Vue 3 · Pinia · PHP · MySQL · MIT
 
 ## 关于项目
 
-XCloud音乐的网站运营已经停止，Web 版本现以完整源码开放，支持独立部署、二次开发及音源适配扩展。
+XCloud音乐的网站运营已经停止，Web 版本现以完整源码开放，支持独立部署、二次开发及音源适配扩展。 软件版本仍可使用，但已不提供登录及云端保存功能，点击下方链接即可下载。
+
+| 平台 | 下载入口 |
+| --- | --- |
+| Windows | [下载 Windows 桌面程序](https://github.com/Awle007/XCloud-Music/releases/download/XCloudAPP/XCloudMusic-PC.exe) |
+| Android | [下载 Android APP](https://github.com/Awle007/XCloud-Music/releases/download/XCloudAPP/XCloudMusic-Android.apk) |
+
+进入对应版本的 Releases 页面，在 **Assets** 中选择适合平台的安装包。
+![桌面截图01](docs/assets/screenshot-01.png)
+![桌面截图02](docs/assets/screenshot-02.png)
 
 > **开始之前**
 >
 > 原站链接及第三方音乐 API 地址已替换为 `example.com` 系列示例；网易官方榜单、歌手、歌单接口，以及 QQ、酷我的官方封面地址保留。项目不提供公共播放服务，搜索、播放、歌词等功能仍需接入自己的兼容 API。页面静态资源、后台库、图标字体和默认头像均从本地加载；歌曲封面与音频按平台返回的地址加载。
-
-## 软件下载
-
-Windows 桌面程序与 Android APP 由项目作者独立发布，安装包通过 [GitHub Releases](https://github.com/Awle007/XCloud-Music/releases) 提供下载。
-
-| 平台 | 下载入口 |
-| --- | --- |
-| Windows | [下载 Windows 桌面程序](https://github.com/Awle007/XCloud-Music/releases) |
-| Android | [下载 Android APP](https://github.com/Awle007/XCloud-Music/releases) |
-
-进入对应版本的 Releases 页面，在 **Assets** 中选择适合平台的安装包。上述两款软件未开源；本仓库公开的是 Web 版本源码，MIT 许可证仅适用于本仓库的项目自有代码，不涵盖这两款软件。
 
 ## 功能
 
