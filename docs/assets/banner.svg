@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="XCloud Music — Your music. Your space.">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10151d"/><stop offset="1" stop-color="#202d38"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#a1f4d1"/><stop offset="1" stop-color="#d1b8ff"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#8bd9bc" stop-opacity=".2"/><stop offset="1" stop-color="#8bd9bc" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <circle cx="1000" cy="180" r="280" fill="url(#glow)"/>
+  <g fill="none" stroke="#a1f4d1" stroke-opacity=".13"><circle cx="1010" cy="180" r="145"/><circle cx="1010" cy="180" r="110"/><circle cx="1010" cy="180" r="75"/></g>
+  <text x="70" y="78" font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="5" fill="#a1f4d1">OPEN SOURCE · WEB EDITION</text>
+  <text x="66" y="174" font-family="Segoe UI,Arial,sans-serif" font-size="74" font-weight="700" letter-spacing="-3" fill="url(#accent)">XCloud Music</text>
+  <text x="70" y="221" font-family="Segoe UI,Arial,sans-serif" font-size="24" fill="#d1d9df">Your music. Your space.</text>
+  <text x="70" y="291" font-family="Segoe UI,Arial,sans-serif" font-size="14" letter-spacing="2" fill="#8b9ba8">VUE 3  /  PHP  /  SELF-HOSTED  /  MIT</text>
+  <g fill="url(#accent)"><rect x="944" y="157" width="13" height="46" rx="6"/><rect x="972" y="129" width="13" height="102" rx="6"/><rect x="1000" y="103" width="13" height="154" rx="6"/><rect x="1028" y="138" width="13" height="84" rx="6"/><rect x="1056" y="160" width="13" height="40" rx="6"/></g>
+</svg>

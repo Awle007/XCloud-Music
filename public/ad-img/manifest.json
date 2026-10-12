@@ -1,0 +1,14 @@
+{
+  "desktop_sidebar": [
+    {
+      "image": "01-ptads2.png",
+      "url": "https://example.com"
+    }
+  ],
+  "mobile_banner": [
+    {
+      "image": "01-ptads.png",
+      "url": "https://example.com"
+    }
+  ]
+}

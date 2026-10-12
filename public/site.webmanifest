@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "XCloud音乐",
+  "short_name": "XCloud音乐",
+  "description": "XCloud 在线音乐播放器",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#101511",
+  "theme_color": "#101511",
+  "icons": [
+    {
+      "src": "/gw.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

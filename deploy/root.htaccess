@@ -1,0 +1,39 @@
+Options -Indexes
+DirectoryIndex index.html index.php
+
+<FilesMatch "^(?:config|_env|_phase3_guard|_security)\.php$">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self' data: https:; media-src 'self' blob: https:; connect-src 'self' https:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; worker-src 'self' blob:"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule (^|/)\.(?!well-known/) - [F,L]
+  RewriteRule ^cache/(?:feedback|rate_limits)(?:/|$) - [F,L]
+  RewriteRule ^admin/includes(?:/|$) - [F,L]
+  RewriteRule ^scripts(?:/|$) - [F,L]
+  RewriteRule ^admin/(?:setup|check_db)\.php$ - [F,L]
+  RewriteRule ^upload/.*\.(?:php|phtml|phar|php[0-9]*)$ - [F,L,NC]
+  RewriteRule ^ad-img/.*\.(?:php|phtml|phar|php[0-9]*)$ - [F,L,NC]
+  RewriteRule ^(?:php|api_check|cache|legacy)(?:/|$) - [L]
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 30 days"
+</IfModule>
