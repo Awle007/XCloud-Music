@@ -14,14 +14,17 @@ Vue 3 · Pinia · PHP · MySQL · MIT
 
 ## 关于项目
 
-XCloud音乐的网站运营已经停止，Web 版本现以完整源码开放，支持独立部署、二次开发及音源适配扩展。 软件版本仍可使用，但已不提供登录及云端保存功能，点击下方链接即可下载。
+XCloud音乐的网站运营已经停止，Web 版本现以完整源码开放，支持独立部署、二次开发及音源适配扩展。
+软件版本仍可使用，但已不提供登录及云端保存功能，点击下方链接即可下载。
 
 | 平台 | 下载入口 |
 | --- | --- |
 | Windows | [下载 Windows 桌面程序](https://github.com/Awle007/XCloud-Music/releases/download/XCloudAPP/XCloudMusic-PC.exe) |
 | Android | [下载 Android APP](https://github.com/Awle007/XCloud-Music/releases/download/XCloudAPP/XCloudMusic-Android.apk) |
+| iOS/Mac | 暂不支持 |
 
-进入对应版本的 Releases 页面，在 **Assets** 中选择适合平台的安装包。
+也可进入 [Releases 页面](https://github.com/Awle007/XCloud-Music/releases)，在 **Assets** 中选择适合平台的安装包。上述两款软件未开源；本仓库公开的是 Web 版本源码，MIT 许可证仅适用于本仓库的项目自有代码，不涵盖这两款软件。
+
 ![桌面截图01](docs/assets/screenshot-01.png)
 ![桌面截图02](docs/assets/screenshot-02.png)
 
