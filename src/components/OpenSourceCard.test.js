@@ -22,4 +22,5 @@ it('opens the configured repository in a separate tab', async () => {
   expect(wrapper.get('a').attributes('target')).toBe('_blank')
   expect(wrapper.get('a').attributes('rel')).toContain('noopener')
   expect(wrapper.text()).toContain('查看源码')
+  expect(wrapper.find('.github-logo').exists()).toBe(true)
 })

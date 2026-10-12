@@ -206,8 +206,21 @@ button:disabled {
   cursor: pointer;
 }
 
-.theme-button {
+.theme-button,
+.github-button {
   border-radius: 999px;
+}
+
+@media (min-width: 861px) {
+  .home-support-actions > .open-source-card {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .app-header .github-button {
+    display: none;
+  }
 }
 
 .icon-button:hover,

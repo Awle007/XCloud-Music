@@ -9,6 +9,8 @@ import { useAuthStore } from '../stores/auth'
 import { getAvatarUrl } from '../services/avatar'
 import { usePreferencesStore } from '../stores/preferences'
 import StyledSelect from './StyledSelect.vue'
+import GitHubLogo from './GitHubLogo.vue'
+import { repositoryUrl } from '../services/repository'
 
 const route = useRoute()
 const router = useRouter()
@@ -84,6 +86,11 @@ watch(() => preferences.searchSource, (value) => {
     </form>
     <div v-else class="global-search-placeholder" aria-hidden="true" />
     <div class="header-actions">
+      <component :is="repositoryUrl ? 'a' : 'button'" class="icon-button github-button"
+        :href="repositoryUrl || undefined" :target="repositoryUrl ? '_blank' : undefined"
+        :rel="repositoryUrl ? 'noopener noreferrer' : undefined" :disabled="!repositoryUrl || undefined"
+        :type="repositoryUrl ? undefined : 'button'" aria-label="GitHub 开源仓库"
+        :title="repositoryUrl ? 'GitHub 开源仓库' : '仓库地址待补充'"><GitHubLogo :size="19" /></component>
       <button class="theme-button" type="button" :aria-label="preferences.theme === 'dark' ? '切换浅色主题' : '切换深色主题'" @click="preferences.toggleTheme"><Sun v-if="preferences.theme === 'dark'" :size="18" /><Moon v-else :size="18" /></button>
       <button v-if="isFeatureEnabled('login')" class="account-button" type="button" @click="openAccount"><img v-if="avatarUrl" :src="avatarUrl" alt="" /><UserRound v-else :size="17" /><span>{{ userLabel }}</span></button>
     </div>

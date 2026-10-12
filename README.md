@@ -6,7 +6,7 @@
 
 Vue 3 · Pinia · PHP · MySQL · MIT
 
-[功能](#功能) · [快速开始](#快速开始) · [音源接入](#音源接入与模块开关) · [生产部署](#生产部署) · [开发](#开发与测试) · [许可](#许可与致谢)
+[软件下载](#软件下载) · [功能](#功能) · [快速开始](#快速开始) · [音源接入](#音源接入与模块开关) · [生产部署](#生产部署) · [开发](#开发与测试) · [许可](#许可与致谢)
 
 </div>
 
@@ -19,6 +19,17 @@ XCloud音乐的网站运营已经停止，Web 版本现以完整源码开放，�
 > **开始之前**
 >
 > 原站链接及第三方音乐 API 地址已替换为 `example.com` 系列示例；网易官方榜单、歌手、歌单接口，以及 QQ、酷我的官方封面地址保留。项目不提供公共播放服务，搜索、播放、歌词等功能仍需接入自己的兼容 API。页面静态资源、后台库、图标字体和默认头像均从本地加载；歌曲封面与音频按平台返回的地址加载。
+
+## 软件下载
+
+Windows 桌面程序与 Android APP 由项目作者独立发布，安装包通过 [GitHub Releases](https://github.com/Awle007/XCloud-Music/releases) 提供下载。
+
+| 平台 | 下载入口 |
+| --- | --- |
+| Windows | [下载 Windows 桌面程序](https://github.com/Awle007/XCloud-Music/releases) |
+| Android | [下载 Android APP](https://github.com/Awle007/XCloud-Music/releases) |
+
+进入对应版本的 Releases 页面，在 **Assets** 中选择适合平台的安装包。上述两款软件未开源；本仓库公开的是 Web 版本源码，MIT 许可证仅适用于本仓库的项目自有代码，不涵盖这两款软件。
 
 ## 功能
 
@@ -248,7 +259,7 @@ php php/rebuild_heart_mode.php --mode=users --force
 
 广告通过 `public/ad-img/manifest.json` 配置，本地图片分别放入 desktop_sidebar / mobile_banner。每项填写图片文件名和自己的 HTTPS 跳转地址。增加广告后重新构建；当前示例链接都指向 example。
 
-首页原 APP 下载入口已改为「GitHub 开源仓库」。在前端 `.env` 中填写 `VITE_GITHUB_REPOSITORY_URL` 后，重启开发服务或重新构建即可跳转；留空时显示「地址待补充」，不会跳到占位网址。返回旧版的按钮及旧版跳转逻辑已移除。社群与更新日志仍为示例链接，可在 `GroupChatCard.vue`、`MeView.vue` 中替换。
+GitHub 仓库入口在桌面端位于主题切换按钮左侧，移动端保留首页原有入口，两处均使用本地 GitHub Logo。默认指向 `Awle007/XCloud-Music`；在前端 `.env` 中设置 `VITE_GITHUB_REPOSITORY_URL` 可覆盖，显式留空则显示待补充状态。修改后重启开发服务或重新构建。返回旧版的按钮及旧版跳转逻辑已移除。社群与更新日志仍为示例链接，可在 `GroupChatCard.vue`、`MeView.vue` 中替换。
 
 </details>
 
