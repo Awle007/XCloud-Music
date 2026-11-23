@@ -19,8 +19,8 @@ XCloud音乐的网站运营已经停止，Web 版本现以完整源码开放，�
 
 | 平台 | 下载入口 | 版本 | 更新时间 |
 | --- | --- | --- | --- |
-| Windows | [下载 Windows 桌面程序](https://github.com/Awle007/XCloud-Music/releases/download/2026.11.5/XCloudMusic-Windows1.0.7.exe) | 1.0.7 | 2026.11.5 |
-| Android | [下载 Android APP](https://github.com/Awle007/XCloud-Music/releases/download/2026.11.5/XCloudMusic-Android1.0.22.apk))| 1.0.22 | 2026.11.5 |
+| Windows | [下载 Windows 桌面程序]((https://github.com/Awle007/XCloud-Music/releases/download/2026.11.23/XCloudMusic-Windows1.0.8.exe) | 1.0.8 | 2026.11.23 |
+| Android | [下载 Android APP]((https://github.com/Awle007/XCloud-Music/releases/download/2026.11.23/XCloudMusic-Android1.0.23.apk)| 1.0.23 | 2026.11.23 |
 | iOS/Mac | 暂不支持 | × | × |
 
 也可进入 [Releases 页面](https://github.com/Awle007/XCloud-Music/releases)，在 **Assets** 中选择适合平台的安装包。上述两款软件未开源；本仓库公开的是 Web 版本源码，MIT 许可证仅适用于本仓库的项目自有代码，不涵盖这两款软件。
